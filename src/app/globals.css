@@ -1,42 +1,36 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --color-primary: #FB878E;
+  --rubine-red: #CE0058;
+  --pink: #FB6095;
+  --orange-pink: #FB878E;
+  --orange-pink-light: #fdc2c4;
+  --peach-fuzz: #ffbe98;
+  --peach-fuzz-light: #fde6d9;
+  --orange: #FBAF87;
+  --yellow: #F5E960;
+  --teal: #55D6C2;
+
+  --header-height: 80px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.background-gradient {
+  background: linear-gradient(135deg, #fdf6f6, var(--peach-fuzz-light), #fcdada, var(--orange-pink-light)) no-repeat;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+body {
+  overflow-x: hidden;
 }
+

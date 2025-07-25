@@ -1,0 +1,2 @@
+ALTER TABLE `CartItem`
+  ALTER COLUMN `cartId` DROP DEFAULT;
