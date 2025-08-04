@@ -5,9 +5,9 @@ import { ThemeProvider, CssBaseline } from '@mui/material'
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { Provider as ReduxProvider } from 'react-redux'
-import ProductsContextProvider from '@/contexts/products.context'
-import {theme} from '@/theme/theme'
-import { store } from '@/store/store'
+import ProductsContextProvider from '@/presentation/state/contexts/products.context'
+import {theme} from '@/lib/theme/theme'
+import { store } from '@/presentation/state/store/store'
 
 const queryClient = new QueryClient()
 

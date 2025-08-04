@@ -1,7 +1,9 @@
+
 export const runtime = 'nodejs'
 
-import { NextResponse } from 'next/server'
-import { productService } from '@/services/product.service'
+import { NextResponse } from 'next/server';
+import { ProductsRepository } from '@/infrastructure/repositories/products.repository';
+import {getProductByIdUseCase} from "@/application/use-cases/products/get-product-by-id.use-case";
 
 export async function GET(
     _req: Request,
@@ -13,7 +15,7 @@ export async function GET(
     }
 
     try {
-        const product = await productService.getProductById({ id })
+        const product = await getProductByIdUseCase(new ProductsRepository())(id)
         if (!product) {
             return NextResponse.json({ error: 'Not found' }, { status: 404 })
         }

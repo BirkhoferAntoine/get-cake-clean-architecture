@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Dancing_Script } from "next/font/google";
 import "./globals.css";
 import React from "react";
-import LayoutPresenter from "@/presenters/LayoutPresenter";
+import LayoutPresenter from "@/interface-adapters/presenters/LayoutPresenter";
 import {Providers} from "@/app/Providers";
 
 const dancingScript = Dancing_Script({

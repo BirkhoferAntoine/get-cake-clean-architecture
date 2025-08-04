@@ -1,6 +1,6 @@
 import {notFound} from 'next/navigation';
 import type { Metadata } from 'next';
-import ProductPresenter from "@/presenters/ProductPresenter";
+import ProductPresenter from "@/interface-adapters/presenters/ProductPresenter";
 import {FC} from "react";
 
 type ProductPageParamsType = {
